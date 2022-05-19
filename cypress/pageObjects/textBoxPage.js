@@ -13,6 +13,10 @@ class TextBoxPage extends BasePage {
     return cy.get('input#userName');
   }
 
+  // static get fullNameInput () {
+  //   return cy.get('input#userName');
+  // }
+
   static get userEmailInput () {
     return cy.get('input#userEmail');
   }

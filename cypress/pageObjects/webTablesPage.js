@@ -42,7 +42,7 @@ class WebTablesPage extends BasePage {
   static get allTableRows() {
     return cy.get("[role='row']");
   }
-
+//parent uzkāpj pa soli uz augšu, find šajā kontekstā atrod delete pogu
   static deleteRow(signature) {
     this.allTableRows.contains(signature).parent().find("[title='Delete']").click();
   }
